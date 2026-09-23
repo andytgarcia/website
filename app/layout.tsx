@@ -29,7 +29,7 @@ const siteUrl =
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
     : "http://localhost:3000");
 
-const siteTitle = "Mission Control — Software Developer Portfolio";
+const siteTitle = "Andrew Thomas — Software Developer Portfolio & Mission Control";
 const siteDescription =
   "A software developer's portfolio built around a mission-control aesthetic. Showcasing experience, projects, and a passion for the space software industry.";
 
