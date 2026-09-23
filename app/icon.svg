@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#152943" />
+      <stop offset="1" stop-color="#091225" />
+    </linearGradient>
+    <pattern id="panels" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 0h4v8H0z" fill="#4fd1ff" fill-opacity=".2" />
+      <path d="M4 0h4v8H4z" fill="#071329" fill-opacity=".9" />
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.1" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="rotate(-34 32 32)">
+    <ellipse cx="32" cy="32" rx="25" ry="23" fill="none" stroke="#4fd1ff" stroke-opacity=".7" stroke-width="2" stroke-dasharray="132 26" filter="url(#glow)" />
+    <circle cx="52" cy="23" r="2.2" fill="#ffb454" />
+  </g>
+  <g transform="rotate(-32 32 32)" stroke-linejoin="round">
+    <path d="M30.5 18.5v8" stroke="#ffb454" stroke-width="2" />
+    <path d="M27.5 18.5a3 3 0 0 1 6 0" fill="none" stroke="#ffb454" stroke-width="2" />
+    <rect x="11" y="27" width="16" height="10" rx="1" fill="url(#panels)" stroke="#4fd1ff" stroke-width="1.8" />
+    <rect x="37" y="27" width="16" height="10" rx="1" fill="url(#panels)" stroke="#4fd1ff" stroke-width="1.8" />
+    <path d="M11 32h16M37 32h16" stroke="#4fd1ff" stroke-opacity=".75" />
+    <path d="M27 32h10" stroke="#4fd1ff" stroke-width="2" />
+    <rect x="29" y="25" width="6" height="14" rx="1.4" fill="url(#body)" stroke="#4fd1ff" stroke-width="1.8" filter="url(#glow)" />
+    <circle cx="32" cy="32" r="1.8" fill="#ffb454" />
+  </g>
+</svg>
